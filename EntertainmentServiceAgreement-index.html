@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Printable Form</title>
+</head>
+<style>
+	@font-face {
+	font-family:Times New Roman;
+			src:url("times.ttf");}
+	
+	button{
+		width: 160px;
+		height: 70px;
+		margin: 40px auto;
+		display: block;
+		font: 20px/1.4em "Times New Roman";
+		background: rgba(139,225,140,1.00)
+	}
+	body{
+		background: whitesmoke;
+	}	
+	#page{
+		background: white;
+		border:20px solid rgba(22,111,179,1.00);
+		padding: 40px;
+		width: 918px;
+		height: 1188px;
+		margin: 0px auto;
+	}
+	h1{
+		text-align: center;
+		font: 52px/1.4em "Times New Roman";
+		font-weight: 600;
+	}
+	p{
+		font: 20px/1.4em "Times New Roman";
+		margin-left: 30px;
+	}
+	input[type="text"]{
+		font: 16px/1.4em "Times New Roman";
+		border: 2px solid black;
+	}
+	@media print{
+		button{
+			display: none;
+			visibility: hidden;
+		}
+	}
+</style>
+<script language="javascript"
+	type="text/javascript">
+	function printPage(){
+		window.print;
+	}
+	</script>
+<body>
+	
+	<div id="page">
+		<h1>Entertainment Services Agreement</h1>
+		<h2>Parties</h2>
+		<p>This Entertainment Services Agreement <b>"Agreement"</b>) is entered on <input type="text"> (the <b>"Effective Date"</b>) by and between <input type="text"> with an address of <input type="text"> (hereinafter referred to as the <b>"Client"</b>) and (hereinafter referred to as the with an address of <b>"Performer"</b>) (collectively referred to as the <b>"Parties"</b>).</p>
+		<h2>Event Information</h2>
+		<p>The Performer agrees to provide entertainment services for the event known as <input type="text"> to be held on <input type="text"> at <input type="text">. The Performer shall arrive at approximately<input type="text"> and perform from <input type="text"> to<input type="text">.</p>
+		<h2>Terms</h2>
+		<p>
+Each Party agrees to indemnify and hold harmless the other Party from any claims, damages, liabilities, losses, or legal expenses arising from negligence, misconduct, or breach of this Agreement.
+Damage Details/Terms: <input type="text">
+		</p>
+		<h2>Payment Terms</h2>
+		<p>The Client agrees to pay the Performer a total amount of $. A deposit of $ shall be due by <input type="text">, and the remaining balance shall be paid no later than <input type="text">.
+		</p>
+		<p>Performer Responsibilities
+The Performer agrees to conduct themselves professionally, provide all agreed-upon entertainment services and equipment, and comply with all venue rules, regulations, and local laws during the event.
+		</p>
+		<p>Liability + Indemnification
+Both Parties agree to indemnify and hold harmless the other Party from damages, claims, liabilities, or expenses caused by negligence, misconduct, or breach of this Agreement.
+		</p>
+        <h2>Signatures</h2>
+		<p>The Performer shall remain an independent contractor and not an employee of the Client. Both Parties agree to indemnify and hold harmless the other Party from damages, claims, or liabilities caused by negligence or breach of this Agreement. Any disputes arising under this Agreement shall be resolved through <input type="text"> under the laws of the State of <input type="text">. This Agreement represents the full understanding between the Parties and may only be modified in writing signed by both Parties.
+
+Client Signature: <input type="text"> Date: <input type="text">
+Performer Signature: <input type="text"> Date: <input type="text">
+            
+            <button onClick="window.print()">Print Page</button>
+		</p>
+	</div>
+</body>
+</html>
